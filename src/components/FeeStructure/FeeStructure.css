@@ -1,0 +1,177 @@
+.fee-structure-container {
+  width: 100%;
+  max-width: 1592px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 80px) 80px;
+  display: grid;
+  gap: 40px;
+}
+
+.fee-card {
+  width: 100%;
+  padding: 60px;
+  background: #ffffff;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0px 2px #1E1E1E;
+  display: grid;
+  gap: 20px;
+}
+
+.fee-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: #FFFFFF;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.fee-header-cell {
+  padding: 20px 34px;
+  font-family: Outfit;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 150%;
+  background: #FFEFE5;
+  border-right: 2px solid #262626;
+}
+
+.fee-header-cell:last-child {
+  border-right: none;
+}
+
+.fee-content {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #FFFCFA;
+  border: 2px solid #262626;
+}
+
+.fee-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 2px solid #262626;
+}
+
+.fee-row:last-child {
+  border-bottom: none;
+}
+
+.fee-cell {
+  padding: 30px 34px;
+  font-family: Outfit;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1a1a1a;
+  border-right: 2px solid #262626;
+}
+
+.fee-cell:last-child {
+  border-right: none;
+}
+
+.fee-additional-header {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  color: #1a1a1a;
+  background: #FFEFE5;
+  padding: 20px 34px;
+  border: 2px solid #262626;
+  border-radius: 12px;
+}
+
+.fee-row--services {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1200px){
+  .fee-header-cell,
+  .fee-cell {
+    padding: 15px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .fee-card {
+    padding: 30px;
+  }
+
+  .fee-header-cell,
+  .fee-cell {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .fee-additional-header {
+    font-size: 20px;
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 830px){
+  .fee-header-cell,
+  .fee-cell {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fee-structure-container {
+    padding: 0 clamp(16px, 4vw, 30px) 60px;
+    gap: 30px;
+  }
+
+  .fee-card {
+    padding: 20px;
+    gap: 16px;
+    overflow-x: auto;
+  }
+
+  .fee-header {
+    min-width: 600px;
+    border-radius: 8px;
+  }
+
+  .fee-content {
+    min-width: 600px;
+    border-radius: 8px;
+  }
+
+  .fee-header-cell,
+  .fee-cell {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  /* الخدمات الإضافية لا تحتاج scroll */
+  .fee-card:last-child {
+    overflow-x: visible;
+  }
+
+  .fee-card:last-child .fee-content {
+    min-width: unset;
+  }
+
+  .fee-additional-header {
+    font-size: 18px;
+    padding: 14px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fee-card {
+    padding: 16px;
+  }
+
+  .fee-header-cell,
+  .fee-cell {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+}

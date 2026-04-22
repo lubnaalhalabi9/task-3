@@ -1,0 +1,302 @@
+.sub-title {
+    margin: 200px 0 80px;
+}
+
+@media (max-width: 1024px) {
+    .sub-title {
+        margin: 100px 0 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-title {
+        margin: 60px 0 40px;
+    }
+}
+
+.team-cards-container {
+    max-width: 1596px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(auto, 773px));
+    gap: 50px;
+    margin: 0 auto;
+    padding: 0 62px;
+}
+
+.team-card {
+    width: 100%;
+    max-width: 773px;
+    display: grid;
+    gap: 30px;
+    border-radius: 12px;
+    padding: 50px;
+    background: #FFFFFF;
+    border: 2px solid #262626;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+}
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-name {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background: #FFF5F0;
+    border: 2px solid #262626;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 150%;
+    color: #333333;
+}
+
+.message-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 16px;
+    background: #FFDECC;
+    border: 2px solid #262626;
+}
+
+.message-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.personal-description {
+    display: grid;
+    gap: 20px;
+    border-radius: 12px;
+    padding: 30px;
+    background: #FFF5F0;
+    border: 2px solid #262626;
+}
+
+.upper-description {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #333333;
+}
+
+.lower-description {
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #333333;
+}
+
+@media (max-width: 1596px) {
+    .team-cards-container {
+        padding: 0 40px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .team-cards-container {
+        max-width: 1280px;
+        grid-template-columns: repeat(2, minmax(auto, 620px));
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .team-card {
+        padding: 40px;
+        gap: 25px;
+    }
+
+    .img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .message-icon {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+    }
+
+    .message-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .upper-description {
+        font-size: 20px;
+    }
+
+    .lower-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .team-cards-container {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 100px auto;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .team-card {
+        padding: 30px;
+    }
+
+    .img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .message-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .message-icon img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .upper-description {
+        font-size: 18px;
+    }
+
+    .lower-description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-cards-container {
+        margin: 60px auto;
+        gap: 20px;
+        padding: 0 16px;
+    }
+
+    .team-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .personal-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .img-name {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .message-icon {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        align-self: flex-end;
+    }
+
+    .message-icon img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .upper-description {
+        font-size: 16px;
+    }
+
+    .lower-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-cards-container {
+        margin: 40px auto;
+        gap: 16px;
+        padding: 0 12px;
+    }
+
+    .team-card {
+        padding: 16px;
+    }
+
+    .img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .message-icon {
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+    }
+
+    .message-icon img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .personal-description {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .upper-description {
+        font-size: 15px;
+    }
+
+    .lower-description {
+        font-size: 13px;
+    }
+}

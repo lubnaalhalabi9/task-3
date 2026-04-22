@@ -1,0 +1,394 @@
+.main-explore-container {
+    width: 100%;
+    height: auto;
+    padding: 80px clamp(16px, 5vw, 40px) 160px;
+    max-width: 1596px;
+    margin: 0 auto;
+}
+
+.explore-cards-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.explore-card {
+    width: 100%;
+    height: auto;
+    display: grid;
+    border-radius: 12px;
+    border-width: 2px;
+    padding: clamp(24px, 5vw, 80px);
+    gap: clamp(24px, 4vw, 80px);
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 2px solid #262626;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+}
+
+.card-description {
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: clamp(20px, 3vw, 50px);
+}
+
+.title-line {
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: clamp(16px, 2.5vw, 30px);
+}
+
+.explore-title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: clamp(28px, 2.5vw, 48px);
+    line-height: 130%;
+    text-align: center;
+    color: #1A1A1A;
+}
+
+.explore-description {
+    font-family: Outfit;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: clamp(16px, 1.1vw, 20px);
+    line-height: 150%;
+    text-align: center;
+    color: #4C4C4D;
+}
+
+.explore-button {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border-width: 2px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: #FFDECC;
+    border: 2px solid #262626;
+    box-shadow: 4px 4px 0px 2px #1E1E1E;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.explore-button-text {
+    font-family: Outfit;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: 150%;
+    text-align: center;
+    color: #333333;
+}
+
+.explore-button-icon svg {
+    width: 30px;
+    height: 30px;
+    color: #262626;
+    align-items: center;
+}
+
+.explore-button:hover {
+    transform: scale(1.02);
+}
+
+.explore-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 10px;
+}
+
+.lines {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.line-container {
+    height: 12px;
+    width: clamp(40px, 6vw, 94px);
+    background-color: #FFBE99;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 100%;
+    height: 0px;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.shape-right,
+.shape-left {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #262626;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.shape-right {
+    right: -10px;
+}
+
+.shape-left {
+    left: -10px;
+}
+
+@media screen and (max-width: 1205px) {
+    .explore-cards-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .explore-card {
+        padding: 50px 40px;
+        gap: 50px;
+    }
+
+    .card-description {
+        gap: 35px;
+    }
+
+    .title-line {
+        gap: 22px;
+    }
+
+    .line-container {
+        width: clamp(60px, 10vw, 80px);
+        height: 10px;
+    }
+}
+
+@media screen and (min-width: 1205px) and (max-width: 1440px) {
+    .explore-cards-container {
+        gap: 40px;
+    }
+
+    .explore-card {
+        padding: 55px 45px;
+        gap: 55px;
+    }
+
+    .card-description {
+        gap: 38px;
+    }
+
+    .title-line {
+        gap: 24px;
+    }
+
+    .line-container {
+        width: clamp(70px, 6vw, 94px);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main-explore-container {
+        padding: 50px 20px 40px;
+    }
+
+    .explore-cards-container {
+        gap: 30px;
+    }
+
+    .explore-card {
+        padding: 30px 22px;
+        gap: 30px;
+        box-shadow: 4px 4px 0px 2px #1E1E1E;
+    }
+
+    .explore-title {
+        font-size: clamp(28px, 6vw, 40px);
+    }
+
+    .explore-description {
+        font-size: 16px;
+    }
+
+    .card-description {
+        gap: 25px;
+    }
+
+    .title-line {
+        gap: 18px;
+    }
+
+    .line-container {
+        width: 60px;
+        height: 10px;
+    }
+
+    .shape-right,
+    .shape-left {
+        width: 16px;
+        height: 16px;
+    }
+
+    .explore-button {
+        height: 56px;
+    }
+
+    .explore-button-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .explore-card {
+        padding: 22px 16px;
+        gap: 22px;
+    }
+
+    .explore-title {
+        font-size: 26px;
+    }
+
+    .explore-description {
+        font-size: 14px;
+    }
+
+    .line-container {
+        width: 45px;
+    }
+
+    .line {
+        border: 1px solid #000;
+    }
+
+    .explore-button {
+        height: 48px;
+    }
+
+    .explore-button-text {
+        font-size: 14px;
+    }
+
+    .explore-button-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .explore-card {
+        padding: 18px 14px;
+        gap: 20px;
+    }
+
+    .explore-title {
+        font-size: 22px;
+    }
+
+    .explore-description {
+        font-size: 13px;
+    }
+
+    .line-container {
+        width: 38px;
+    }
+
+    .explore-button {
+        height: 42px;
+    }
+
+    .explore-button-text {
+        font-size: 13px;
+    }
+
+    .explore-button-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-explore-container {
+        padding: 35px 12px 25px;
+    }
+
+    .explore-cards-container {
+        gap: 18px;
+    }
+
+    .explore-card {
+        padding: 16px 12px;
+        gap: 16px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 0px 1px #1E1E1E;
+    }
+
+    .explore-title {
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .explore-description {
+        font-size: 12px;
+        line-height: 135%;
+    }
+
+    .explore-line {
+        margin-top: 6px;
+        overflow: hidden;
+    }
+
+    .lines {
+        gap: 4px;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .line-container {
+        flex: 1;
+        min-width: 6px;
+        height: 8px;
+    }
+
+    .line {
+        border: 1px solid #000;
+    }
+
+    .shape-right,
+    .shape-left {
+        width: 12px;
+        height: 12px;
+        border-width: 1px;
+    }
+
+    .explore-button {
+        height: 36px;
+        gap: 6px;
+        border-radius: 8px;
+        padding: 8px 10px;
+    }
+
+    .explore-button-text {
+        font-size: 12px;
+    }
+
+    .explore-button-icon svg {
+        width: 14px;
+        height: 14px;
+    }
+}

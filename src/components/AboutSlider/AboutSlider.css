@@ -1,0 +1,30 @@
+.about-slide {
+    width: 100%;
+    max-width: 1592px;
+    margin: 0 auto;
+    padding: 80px clamp(20px, 5vw, 80px);
+    display: grid;
+    gap: 60px;
+}
+
+.about-slide .slider-item { 
+    display: flex; 
+}
+.about-slide .card-container {
+    flex: 1; 
+    }
+.about-slide .main-card { 
+    height: 100%; 
+}
+
+.awards {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    color: #1A1A1A;
+}
+
+@media (max-width: 768px) {
+    .awards { font-size: 16px; }
+}
