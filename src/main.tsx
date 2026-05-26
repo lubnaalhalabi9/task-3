@@ -41,7 +41,10 @@ const router = createBrowserRouter([
       },
     ]
   }
-])
+],
+{
+  basename: "/task-3"
+})
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

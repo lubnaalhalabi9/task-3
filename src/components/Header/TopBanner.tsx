@@ -1,4 +1,4 @@
-import topBanner from "/assets/TopBanner.png"
+import topBanner from "../../assets/images/TopBanner.png"
 import { IoIosArrowRoundForward } from "react-icons/io";
 const TopBanner = () => {
   return (

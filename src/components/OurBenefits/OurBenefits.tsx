@@ -3,12 +3,12 @@
 import './ourBenefits.css'
 import Card from './Card'
 import Title from './Title'
-import img1 from "/assets/HomeBenefitsImg1.png"
-import img2 from "/assets/HomeBenefitsImg2.png"
-import img3 from "/assets/HomeBenefitsImg3.png"
-import img4 from "/assets/HomeBenefitsImg4.png"
-import img5 from "/assets/HomeBenefitsImg5.png"
-import img6 from "/assets/HomeBenefitsImg6.png"
+import img1 from "../../assets/images/HomeBenefitsImg1.png"
+import img2 from "../../assets/images/HomeBenefitsImg2.png"
+import img3 from "../../assets/images/HomeBenefitsImg3.png"
+import img4 from "../../assets/images/HomeBenefitsImg4.png"
+import img5 from "../../assets/images/HomeBenefitsImg5.png"
+import img6 from "../../assets/images/HomeBenefitsImg6.png"
 
 const cardsData = [
   {

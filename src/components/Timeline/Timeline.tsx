@@ -2,7 +2,7 @@
 // Shows: vertical timeline with year card + connector line + title & description
 
 import "./Timeline.css"
-import img from "/assets/TimelineImg.png"
+import img from "../../assets/images/TimelineImg.png"
 
 interface TimelineItem {
   year: string;

@@ -2,7 +2,7 @@
 // Shows: logo + description + contact info | navigation links | legal + social icons
 
 import './footer.css'
-import Logo from "/assets/LittleLearners.png"
+import Logo from "../../assets/images/LittleLearners.png"
 import FooterContact from './FooterContact';
 import FooterLink from './FooterLink';
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";

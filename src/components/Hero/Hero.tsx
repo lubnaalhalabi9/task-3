@@ -1,8 +1,8 @@
 // Shows: hero image with decorative elements + title/paragraph + statistics (students, awards, educators)
 
 import "./hero.css"
-import HeroImage from "/assets/HeroImage.png"
-import AbstractDesign from "/assets/AbstractDesign.png"
+import HeroImage from "../../assets/images/HeroImage.png"
+import AbstractDesign from "../../assets/images/AbstractDesign.png"
 
 interface StatisticsItems {    
     number: number,

@@ -7,9 +7,9 @@ import Title from "../OurBenefits/Title";
 import Slider from "../Slider/Slider";
 import TestimonialCard from "./TestimonialCard";
 
-import personalImage1 from "/assets/personalImage1.png";
-import personalImage2 from "/assets/personalImage2.png";
-import personalImage3 from "/assets/personalImage3.png";
+import personalImage1 from "../../assets/images/personalImage1.png";
+import personalImage2 from "../../assets/images/personalImage2.png";
+import personalImage3 from "../../assets/images/personalImage3.png";
 
 const testimonialsData = [
   {

@@ -4,7 +4,7 @@
 
 import Title from '../OurBenefits/Title'
 import './PageHero.css'
-import Design from "/assets/PageHeroDesign.png"
+import Design from "../../assets/images/PageHeroDesign.png"
 
 interface ContactLink {
   icon: React.ReactNode;

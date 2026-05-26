@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import Logo from '/assets/LittleLearners.png'
+import Logo from '../../assets/images/LittleLearners.png'
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 
 interface LinkItem {

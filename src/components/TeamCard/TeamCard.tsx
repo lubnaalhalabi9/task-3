@@ -2,7 +2,7 @@
 // Shows: profile image + name + qualification + description + message icon
 
 import './TeamCard.css'
-import MessageIcon from '/assets/Message.png'
+import MessageIcon from '../../assets/images/Message.png'
 
 interface TeamProps {
   img: string;
